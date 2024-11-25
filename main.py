@@ -30,11 +30,11 @@ try:
 
     # Ahora estás en el portal principal (si todo salió bien)
     time.sleep(10)  # Tiempo para verificar visualmente el resultado
-    boton_cookies = WebDriverWait(driver, 10).until(
+    """boton_cookies = WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-testid='uc-accept-all-button']"))
     )
     boton_cookies.click()
-    driver.get(url2)
+    driver.get(url2)"""
     time.sleep(5)  # Tiempo para verificar visualmente el resultado
 finally:
     driver.quit()  # Cierra el navegador
